@@ -1,0 +1,137 @@
+{
+  "name": "run-subagent-sonnet-real",
+  "n": 164,
+  "agreement": 0.975609756097561,
+  "agreement_ci95": [
+    0.9512195121951219,
+    0.9939024390243902
+  ],
+  "macro_f1": 0.979391756702681,
+  "macro_f1_ci95": [
+    0.9501142071735525,
+    0.996132639995819
+  ],
+  "per_class": {
+    "pide_informacion": [
+      1.0,
+      0.9428571428571428,
+      35
+    ],
+    "quiere_contacto": [
+      1.0,
+      1.0,
+      25
+    ],
+    "prefiere_escrito": [
+      1.0,
+      1.0,
+      25
+    ],
+    "pospone": [
+      0.9090909090909091,
+      1.0,
+      10
+    ],
+    "no_interesado": [
+      1.0,
+      0.9615384615384616,
+      26
+    ],
+    "sin_intencion": [
+      0.9302325581395349,
+      0.975609756097561,
+      41
+    ],
+    "fuera_de_tema": [
+      1.0,
+      1.0,
+      2
+    ]
+  },
+  "confusion": {
+    "pide_informacion": {
+      "pide_informacion": 33,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 2,
+      "fuera_de_tema": 0
+    },
+    "quiere_contacto": {
+      "pide_informacion": 0,
+      "quiere_contacto": 25,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "prefiere_escrito": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 25,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "pospone": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 10,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "no_interesado": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 25,
+      "sin_intencion": 1,
+      "fuera_de_tema": 0
+    },
+    "sin_intencion": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 1,
+      "no_interesado": 0,
+      "sin_intencion": 40,
+      "fuera_de_tema": 0
+    },
+    "fuera_de_tema": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 2
+    }
+  },
+  "error_cost": {
+    "mean_cost": 0.04878048780487805,
+    "expensive_errors": 2
+  },
+  "disagreements": [
+    "reply_0018",
+    "reply_0030",
+    "reply_0061",
+    "reply_0119"
+  ],
+  "hard_v1": {
+    "n": 14,
+    "agreement": 0.9285714285714286,
+    "agree_rows": 13
+  },
+  "hard_v2": {
+    "n": 2,
+    "agreement": 0.5,
+    "agree_rows": 1
+  },
+  "method": "Claude Code sub-agent, pinned model alias; batches of <= 20; no cost/latency measured"
+}

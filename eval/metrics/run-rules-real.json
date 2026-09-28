@@ -1,0 +1,180 @@
+{
+  "name": "run-rules-real",
+  "n": 164,
+  "agreement": 0.7134146341463414,
+  "agreement_ci95": [
+    0.6402439024390244,
+    0.7804878048780488
+  ],
+  "macro_f1": 0.6837970814715001,
+  "macro_f1_ci95": [
+    0.5408798444267415,
+    0.7735626144864328
+  ],
+  "per_class": {
+    "pide_informacion": [
+      0.7741935483870968,
+      0.6857142857142857,
+      35
+    ],
+    "quiere_contacto": [
+      0.9473684210526315,
+      0.72,
+      25
+    ],
+    "prefiere_escrito": [
+      0.9333333333333333,
+      0.56,
+      25
+    ],
+    "pospone": [
+      0.6,
+      0.3,
+      10
+    ],
+    "no_interesado": [
+      1.0,
+      0.6538461538461539,
+      26
+    ],
+    "sin_intencion": [
+      0.5263157894736842,
+      0.975609756097561,
+      41
+    ],
+    "fuera_de_tema": [
+      1.0,
+      0.5,
+      2
+    ]
+  },
+  "confusion": {
+    "pide_informacion": {
+      "pide_informacion": 24,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 11,
+      "fuera_de_tema": 0
+    },
+    "quiere_contacto": {
+      "pide_informacion": 1,
+      "quiere_contacto": 18,
+      "prefiere_escrito": 1,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 5,
+      "fuera_de_tema": 0
+    },
+    "prefiere_escrito": {
+      "pide_informacion": 5,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 14,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 6,
+      "fuera_de_tema": 0
+    },
+    "pospone": {
+      "pide_informacion": 0,
+      "quiere_contacto": 1,
+      "prefiere_escrito": 0,
+      "pospone": 3,
+      "no_interesado": 0,
+      "sin_intencion": 6,
+      "fuera_de_tema": 0
+    },
+    "no_interesado": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 2,
+      "no_interesado": 17,
+      "sin_intencion": 7,
+      "fuera_de_tema": 0
+    },
+    "sin_intencion": {
+      "pide_informacion": 1,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 40,
+      "fuera_de_tema": 0
+    },
+    "fuera_de_tema": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 1,
+      "fuera_de_tema": 1
+    }
+  },
+  "error_cost": {
+    "mean_cost": 0.5670731707317073,
+    "expensive_errors": 17
+  },
+  "disagreements": [
+    "reply_0002",
+    "reply_0005",
+    "reply_0013",
+    "reply_0018",
+    "reply_0020",
+    "reply_0021",
+    "reply_0024",
+    "reply_0027",
+    "reply_0031",
+    "reply_0033",
+    "reply_0040",
+    "reply_0046",
+    "reply_0048",
+    "reply_0049",
+    "reply_0050",
+    "reply_0051",
+    "reply_0056",
+    "reply_0057",
+    "reply_0061",
+    "reply_0070",
+    "reply_0074",
+    "reply_0075",
+    "reply_0080",
+    "reply_0084",
+    "reply_0087",
+    "reply_0089",
+    "reply_0091",
+    "reply_0096",
+    "reply_0099",
+    "reply_0113",
+    "reply_0117",
+    "reply_0120",
+    "reply_0121",
+    "reply_0126",
+    "reply_0134",
+    "reply_0137",
+    "reply_0138",
+    "reply_0141",
+    "reply_0145",
+    "reply_0150",
+    "reply_0151",
+    "reply_0153",
+    "reply_0154",
+    "reply_0157",
+    "reply_0158",
+    "reply_0167",
+    "reply_0179"
+  ],
+  "hard_v1": {
+    "n": 14,
+    "agreement": 0.5,
+    "agree_rows": 7
+  },
+  "hard_v2": {
+    "n": 2,
+    "agreement": 0.0,
+    "agree_rows": 0
+  },
+  "failed_calls": 0
+}

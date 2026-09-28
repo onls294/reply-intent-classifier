@@ -1,0 +1,134 @@
+{
+  "name": "run-labeler-pass-b-real",
+  "n": 164,
+  "agreement": 0.9939024390243902,
+  "agreement_ci95": [
+    0.9817073170731707,
+    1.0
+  ],
+  "macro_f1": 0.9907600326116496,
+  "macro_f1_ci95": [
+    0.9656956799813943,
+    1.0
+  ],
+  "per_class": {
+    "pide_informacion": [
+      1.0,
+      1.0,
+      35
+    ],
+    "quiere_contacto": [
+      1.0,
+      1.0,
+      25
+    ],
+    "prefiere_escrito": [
+      1.0,
+      1.0,
+      25
+    ],
+    "pospone": [
+      1.0,
+      0.9,
+      10
+    ],
+    "no_interesado": [
+      1.0,
+      1.0,
+      26
+    ],
+    "sin_intencion": [
+      0.9761904761904762,
+      1.0,
+      41
+    ],
+    "fuera_de_tema": [
+      1.0,
+      1.0,
+      2
+    ]
+  },
+  "confusion": {
+    "pide_informacion": {
+      "pide_informacion": 35,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "quiere_contacto": {
+      "pide_informacion": 0,
+      "quiere_contacto": 25,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "prefiere_escrito": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 25,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "pospone": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 9,
+      "no_interesado": 0,
+      "sin_intencion": 1,
+      "fuera_de_tema": 0
+    },
+    "no_interesado": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 26,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "sin_intencion": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 41,
+      "fuera_de_tema": 0
+    },
+    "fuera_de_tema": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 2
+    }
+  },
+  "error_cost": {
+    "mean_cost": 0.006097560975609756,
+    "expensive_errors": 0
+  },
+  "disagreements": [
+    "reply_0179"
+  ],
+  "hard_v1": {
+    "n": 14,
+    "agreement": 0.9285714285714286,
+    "agree_rows": 13
+  },
+  "hard_v2": {
+    "n": 2,
+    "agreement": 0.5,
+    "agree_rows": 1
+  },
+  "method": "v2 labeling pass B vs the reconciled reference label (self-consistency, not independent)"
+}

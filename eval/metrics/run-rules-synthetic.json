@@ -1,0 +1,122 @@
+{
+  "name": "run-rules-synthetic",
+  "n": 70,
+  "agreement": 1.0,
+  "agreement_ci95": [
+    1.0,
+    1.0
+  ],
+  "macro_f1": 1.0,
+  "macro_f1_ci95": [
+    1.0,
+    1.0
+  ],
+  "per_class": {
+    "pide_informacion": [
+      1.0,
+      1.0,
+      15
+    ],
+    "quiere_contacto": [
+      1.0,
+      1.0,
+      11
+    ],
+    "prefiere_escrito": [
+      1.0,
+      1.0,
+      11
+    ],
+    "pospone": [
+      1.0,
+      1.0,
+      4
+    ],
+    "no_interesado": [
+      1.0,
+      1.0,
+      11
+    ],
+    "sin_intencion": [
+      1.0,
+      1.0,
+      17
+    ],
+    "fuera_de_tema": [
+      1.0,
+      1.0,
+      1
+    ]
+  },
+  "confusion": {
+    "pide_informacion": {
+      "pide_informacion": 15,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "quiere_contacto": {
+      "pide_informacion": 0,
+      "quiere_contacto": 11,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "prefiere_escrito": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 11,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "pospone": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 4,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "no_interesado": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 11,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "sin_intencion": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 17,
+      "fuera_de_tema": 0
+    },
+    "fuera_de_tema": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 1
+    }
+  },
+  "error_cost": {
+    "mean_cost": 0.0,
+    "expensive_errors": 0
+  },
+  "disagreements": [],
+  "failed_calls": 0
+}

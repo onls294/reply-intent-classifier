@@ -1,0 +1,132 @@
+{
+  "name": "run-labeler-pass-a-real",
+  "n": 164,
+  "agreement": 1.0,
+  "agreement_ci95": [
+    1.0,
+    1.0
+  ],
+  "macro_f1": 1.0,
+  "macro_f1_ci95": [
+    1.0,
+    1.0
+  ],
+  "per_class": {
+    "pide_informacion": [
+      1.0,
+      1.0,
+      35
+    ],
+    "quiere_contacto": [
+      1.0,
+      1.0,
+      25
+    ],
+    "prefiere_escrito": [
+      1.0,
+      1.0,
+      25
+    ],
+    "pospone": [
+      1.0,
+      1.0,
+      10
+    ],
+    "no_interesado": [
+      1.0,
+      1.0,
+      26
+    ],
+    "sin_intencion": [
+      1.0,
+      1.0,
+      41
+    ],
+    "fuera_de_tema": [
+      1.0,
+      1.0,
+      2
+    ]
+  },
+  "confusion": {
+    "pide_informacion": {
+      "pide_informacion": 35,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "quiere_contacto": {
+      "pide_informacion": 0,
+      "quiere_contacto": 25,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "prefiere_escrito": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 25,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "pospone": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 10,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "no_interesado": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 26,
+      "sin_intencion": 0,
+      "fuera_de_tema": 0
+    },
+    "sin_intencion": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 41,
+      "fuera_de_tema": 0
+    },
+    "fuera_de_tema": {
+      "pide_informacion": 0,
+      "quiere_contacto": 0,
+      "prefiere_escrito": 0,
+      "pospone": 0,
+      "no_interesado": 0,
+      "sin_intencion": 0,
+      "fuera_de_tema": 2
+    }
+  },
+  "error_cost": {
+    "mean_cost": 0.0,
+    "expensive_errors": 0
+  },
+  "disagreements": [],
+  "hard_v1": {
+    "n": 14,
+    "agreement": 1.0,
+    "agree_rows": 14
+  },
+  "hard_v2": {
+    "n": 2,
+    "agreement": 1.0,
+    "agree_rows": 2
+  },
+  "method": "v2 labeling pass A vs the reconciled reference label (self-consistency, not independent)"
+}

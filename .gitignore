@@ -1,0 +1,16 @@
+# Never in the repo: real data, private pseudonymization inputs, environments
+.venv/
+__pycache__/
+.pytest_cache/
+*.local.*
+*.local
+data/*.csv
+data/*.tsv
+data/*.json
+names*
+brand*
+mapping*
+.env
+
+# Public dataset: labels + structural variables, no customer text (checked by a leak checker before publishing)
+!data/replies.csv

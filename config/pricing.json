@@ -1,0 +1,11 @@
+{
+  "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+  "fetched": "2026-09-27",
+  "currency": "USD",
+  "unit": "per million tokens",
+  "note": "Standard first-party Claude API rates, global inference. 5-minute cache writes. Copied from the official page on the date above; not written from memory.",
+  "models": {
+    "claude-opus-5-5": {"input": 4.00, "cache_write_5m": 5.00, "cache_read": 0.20, "output": 20.00},
+    "claude-sonnet-5": {"input": 2.00, "cache_write_5m": 2.50, "cache_read": 0.20, "output": 10.00}
+  }
+}

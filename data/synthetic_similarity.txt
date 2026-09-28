@@ -1,0 +1,7 @@
+Similarity of the synthetic set (data/synthetic.py) to the private real replies.
+Measured 2026-09-27. Method: difflib ratio on accent-folded word text, and token Jaccard.
+Rows compared: 66 synthetic replies with word content (4 are emoji/punctuation only) vs 170 real replies with text.
+Max ratio: 0.69
+Max Jaccard: 0.43
+Identical rows: 0
+Rule: any synthetic row with ratio >= 0.70 or Jaccard >= 0.50 was rewritten. 10 rows were rewritten.

@@ -42,7 +42,7 @@ def write(metrics_dir, out_path):
          "| Claude Sonnet 5 | `claude-sonnet-5` | 11 Claude Code sub-agents (alias `sonnet`) | **not controlled** (sub-agent defaults) | **not controlled** |",
          "| ⚠ Labeler passes A/B (ceiling) | `claude-opus-5-5` | the existing v2 labeling passes, no new calls | not controlled | not controlled |",
          "", "## Real set (n = 164, private text)", "",
-         "| Classifier | Agreement (95 % CI) | Macro-F1 (95 % CI) | Mean error cost | Expensive errors | Hard rows v1 (14) | Hard rows v2 (2) |",
+         "| Classifier | Agreement (95 % CI) | Macro-F1 (95 % CI) | Mean error cost | Costly errors | Hard rows v1 (14) | Hard rows v2 (2) |",
          "|---|---|---|---|---|---|---|"]
     for key, name in ROWS:
         d = m.get(f"run-{key}-real")
@@ -57,7 +57,7 @@ def write(metrics_dir, out_path):
           "The reference labels are the reconciliation of two passes of the labeling model (Claude Opus 5.5) over the same",
           "164 rows. Each pass compared with the reconciled label shows how consistent the labeler is with itself: the",
           "ceiling any classifier can reach against these labels, not a competitor.", "",
-          "| Pass | Agreement (95 % CI) | Macro-F1 | Expensive errors |", "|---|---|---|---|"]
+          "| Pass | Agreement (95 % CI) | Macro-F1 | Costly errors |", "|---|---|---|---|"]
     for key, name in CEILING:
         d = m.get(f"run-{key}-real")
         if d:
@@ -74,7 +74,7 @@ def write(metrics_dir, out_path):
             p, r, n = d["per_class"][c] if d else (None, None, "–")
             cells.append(f"{_f(p)} / {_f(r)}")
         L.append(f"| {c} | {n} | " + " | ".join(cells) + " |")
-    L += ["", "## Expensive errors on the real set (cost > 1, see DECISION.md)", "",
+    L += ["", "## Costly errors on the real set (cost > 1, see DECISION.md)", "",
           "| Classifier | Claude label → predicted | Count |", "|---|---|---|"]
     for key, name in ROWS[:3]:
         d = m.get(f"run-{key}-real")
@@ -117,13 +117,13 @@ def write(metrics_dir, out_path):
             L.append(f"| {g} | " + " | ".join(str(d["confusion"][g][p]) for p in LABELS) + " |")
         L.append("")
     from eval.run_eval import EXPENSIVE, OPT_OUT_MISSED
-    L += ["## Definition of an expensive error (as in `eval/run_eval.py`)", "",
+    L += ["## Definition of a costly error (as in `eval/run_eval.py`, constant `EXPENSIVE`)", "",
           "A correct prediction costs 0 and any other error costs 1, except these pairs (Claude label → predicted):", "",
           "| Claude label | Predicted | Cost |", "|---|---|---|"]
     for (g, p), c in EXPENSIVE.items():
         L.append(f"| {g} | {p} | {c} |")
     L += [f"| explicit opt-out (any label) | anything but no_interesado | {OPT_OUT_MISSED} |", "",
-          "An **expensive error** is one with cost > 1. The mean error cost is the total cost divided by the number of rows.", "",
+          "A **costly error** is one with cost > 1. The mean error cost is the total cost divided by the number of rows.", "",
           "## Data-handling note: BOM in 3 Haiku outputs", "",
           "Three Haiku sub-agent output files (batches R03, R05, R09) started with a UTF-8 byte-order mark, because the",
           "sub-agent wrote them through PowerShell. The first line of each file then failed JSON parsing. The validator",

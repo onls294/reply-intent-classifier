@@ -22,7 +22,7 @@
 
 ## Real set (n = 164, private text)
 
-| Classifier | Agreement (95 % CI) | Macro-F1 (95 % CI) | Mean error cost | Expensive errors | Hard rows v1 (14) | Hard rows v2 (2) |
+| Classifier | Agreement (95 % CI) | Macro-F1 (95 % CI) | Mean error cost | Costly errors | Hard rows v1 (14) | Hard rows v2 (2) |
 |---|---|---|---|---|---|---|
 | Rules (`baseline/rules.py`) | 71.3 % (64.0 %–78.0 %) | 0.68 (0.54–0.77) | 0.57 | 17 | 7 / 14 | 0 / 2 |
 | Claude Haiku 4.5 (`claude-haiku-4-5-20251001`) | 93.9 % (90.2 %–97.6 %) | 0.95 (0.90–0.98) | 0.11 | 4 | 11 / 14 | 0 / 2 |
@@ -34,7 +34,7 @@ The reference labels are the reconciliation of two passes of the labeling model 
 164 rows. Each pass compared with the reconciled label shows how consistent the labeler is with itself: the
 ceiling any classifier can reach against these labels, not a competitor.
 
-| Pass | Agreement (95 % CI) | Macro-F1 | Expensive errors |
+| Pass | Agreement (95 % CI) | Macro-F1 | Costly errors |
 |---|---|---|---|
 | ⚠ Labeler v2 pass A (`claude-opus-5-5`) | 100.0 % (100.0 %–100.0 %) | 1.00 | 0 |
 | ⚠ Labeler v2 pass B (`claude-opus-5-5`) | 99.4 % (98.2 %–100.0 %) | 0.99 | 0 |
@@ -53,7 +53,7 @@ Pass A agrees 100 % **by construction**: the reconciled label equals pass A wher
 | sin_intencion | 41 | 0.53 / 0.98 | 0.90 / 0.90 | 0.93 / 0.98 |
 | fuera_de_tema | 2 | 1.00 / 0.50 | 1.00 / 1.00 | 1.00 / 1.00 |
 
-## Expensive errors on the real set (cost > 1, see DECISION.md)
+## Costly errors on the real set (cost > 1, see DECISION.md)
 
 | Classifier | Claude label → predicted | Count |
 |---|---|---|
@@ -117,7 +117,7 @@ Pass A agrees 100 % **by construction**: the reconciled label equals pass A wher
 | sin_intencion | 0 | 0 | 0 | 1 | 0 | 40 | 0 |
 | fuera_de_tema | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
 
-## Definition of an expensive error (as in `eval/run_eval.py`)
+## Definition of a costly error (as in `eval/run_eval.py`, constant `EXPENSIVE`)
 
 A correct prediction costs 0 and any other error costs 1, except these pairs (Claude label → predicted):
 
@@ -130,7 +130,7 @@ A correct prediction costs 0 and any other error costs 1, except these pairs (Cl
 | pide_informacion | sin_intencion | 3 |
 | explicit opt-out (any label) | anything but no_interesado | 5 |
 
-An **expensive error** is one with cost > 1. The mean error cost is the total cost divided by the number of rows.
+A **costly error** is one with cost > 1. The mean error cost is the total cost divided by the number of rows.
 
 ## Data-handling note: BOM in 3 Haiku outputs
 
